@@ -31,13 +31,13 @@
       </div>
     </header>
     <!-- Основной контент сайта -->
-    <main class="main-container">
+    <main class="main">
       <h1 class="visually-hidden">Продажа функционального питания для котов</h1>
       <section class="hero">
         <div class="hero__wrapper">
           <h2 class="hero__title">Функциональное питание для котов</h2>
           <p class="hero__description">Занялся собой? Займись котом!</p>
-          <a class="hero__button" href="form.html">Подобрать программу</a>
+          <a class="hero__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="programs">
@@ -47,12 +47,12 @@
             <li class="programs__item">
               <h3 class="programs__title">Похудение</h3>
               <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="programs__link" href="catalog.html">Каталог slim</a>
+              <a class="programs__link" role="link" aria-disabled="true">Каталог slim</a>
             </li>
             <li class="programs__item">
               <h3 class="programs__title">Набор массы</h3>
               <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="programs__link" href="catalog.html">Каталог pro</a>
+              <a class="programs__link" role="link" aria-disabled="true">>Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -77,16 +77,16 @@
           <dl class="article__list">
             <div class="article__item">
               <dt class="article__name">Cнижение веса</dt>
-              <dd class="article__meaning">5 КГ</dd>
+              <dd class="article__meaning">5 кг</dd>
             </div>
             <div class="article__item">
               <dt class="article__name">Затрачено времени</dt>
-              <dd class="article__meaning">60 ДНЕЙ</dd>
+              <dd class="article__meaning">60 дней</dd>
             </div>
           </dl>
           <div class="article__price-wrapper">
             <p class="article__price">Затраты на питание:</p>
-            <p class="article__sum">15 000 РУБ.</p>
+            <p class="article__sum">15 000 руб.</p>
           </div>
           <div class="article__slider slider">
             <img class="slider__image" src="#" alt="Фотография до похудения">
@@ -107,7 +107,7 @@
     <!-- Подвал сайта -->
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo" aria-label="Перейти на главную страницу сайта">
+        <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
           <img class="footer__logo-image" src="#" alt="Cat energy" aria-hidden="true">
         </a>
         <ul class="footer__list">
@@ -127,8 +127,8 @@
             </a>
           </li>
         </ul>
-        <a class="footer__copyright copyright" aria-label="Перейти на сайт htmlacademy">
-          <span>HTML Academy</span>
+        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на страницу интенсива HTML и CSS. Адаптивная вёрстка и автоматизация">
+          <span class="copyright__content">HTML Academy</span>
           <img class="copyright__logo" src="#" alt="Логотип htmlacademy" aria-hidden="true">
         </a>
       </div>
