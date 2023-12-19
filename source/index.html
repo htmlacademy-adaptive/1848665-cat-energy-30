@@ -52,7 +52,7 @@
             <li class="programs__item">
               <h3 class="programs__title">Набор массы</h3>
               <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="programs__link" role="link" aria-disabled="true">>Каталог pro</a>
+              <a class="programs__link" role="link" aria-disabled="true">Каталог pro</a>
             </li>
           </ul>
         </div>
@@ -89,8 +89,14 @@
             <p class="article__sum">15 000 руб.</p>
           </div>
           <div class="article__slider slider">
-            <img class="slider__image" src="#" alt="Фотография до похудения">
-            <img class="slider__image" src="#" alt="Фотография после похудения">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+              <img class="slider__image" width="280" height="256" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Фотография кота до похудения">
+            </picture>
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" width="560" height="512" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+              <img class="slider__image" width="280" height="256" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Фотография кота после похудения">
+            </picture>
             <button class="slider__button" type="button" aria-label="Смена слайда"></button>
           </div>
         </div>
