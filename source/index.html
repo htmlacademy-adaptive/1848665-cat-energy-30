@@ -5,6 +5,12 @@
     <title>Главная страница</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicons.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
@@ -12,7 +18,15 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo" aria-label="Перейти на главную страницу сайта">
-          <img class="header__logo-image" src="#" alt="Логотип компании Cat energy" aria-hidden="true">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo-image-desktop.svg">
+            <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-image-tablet.svg">
+            <img class="header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Логотип компании Cat energy" aria-hidden="true">
+          </picture>
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo-text-desktop.svg">
+            <img class="header__logo-text" width="101" height="18" src="images/logo-text-mobile.svg" alt="Cat energy" aria-hidden="true">
+          </picture>
         </a>
         <button class="main-nav-toggle" type="button" aria-label="Открыть меню"></button>
         <nav class="main-nav">
@@ -114,7 +128,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
-          <img class="footer__logo-image" src="#" alt="Cat energy" aria-hidden="true">
+          <img class="footer__logo-image" src="№" alt="Cat energy" aria-hidden="true">
         </a>
         <ul class="footer__list">
           <li class="footer__item">
