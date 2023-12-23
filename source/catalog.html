@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Каталог</title>
@@ -13,7 +13,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
+  <body>
     <!-- Шапка сайта -->
     <header class="header">
       <div class="header__wrapper">
@@ -28,7 +28,7 @@
             <img class="header__logo-text" width="101" height="18" src="images/logo-text-mobile.svg" alt="Cat energy" aria-hidden="true">
           </picture>
         </a>
-        <button class="main-nav-toggle" type="button" aria-label="Открыть меню"></button>
+        <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -323,10 +323,13 @@
           </ul>
           <aside class="additional-products__offers offers">
             <h2 class="visually-hidden">Специальное предложение</h2>
-            <p class="offers__description description">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="offers__description">Закажите все и получите чехол для кота в подарок!</p>
           </aside>
         </div>
       </section>
+    </main>
+    <!-- Подвал сайта -->
+    <footer class="footer">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
@@ -335,9 +338,6 @@
         </div>
         <div class="contacts__map"></div>
       </section>
-    </main>
-    <!-- Подвал сайта -->
-    <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
           <img class="footer__logo-image" src="#" alt="Cat energy" aria-hidden="true">
