@@ -1,0 +1,16 @@
+.hero {
+  font-family: $oswald-font;
+  color: $basic-white;
+  text-align: center;
+  line-height: 1;
+  background-color: $basic-green;
+}
+
+.hero__title {
+  font-size: 36px;
+}
+
+.hero__description {
+  font-size: 14px;
+  text-transform: uppercase;
+}
