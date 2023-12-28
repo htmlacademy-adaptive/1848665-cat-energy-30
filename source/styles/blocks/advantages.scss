@@ -4,3 +4,30 @@
   line-height: 40px;
   color: $basic-black;
 }
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advantages__description {
+  position: relative;
+  width: 200px;
+  color: $special-dark-grey;
+
+  &--leaf {
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $basic-green;
+      background-image: url("../../images/icons/leaf-icon.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 60px;
+
+    }
+  }
+}

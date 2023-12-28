@@ -5,6 +5,11 @@
   text-align: left;
 }
 
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .form__text {
   font-family: $lato-font;
   line-height: 16px;
