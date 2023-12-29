@@ -7,10 +7,12 @@
 }
 
 .hero__title {
+  @include title-reset;
   font-size: 36px;
 }
 
 .hero__description {
+  @include description-reset;
   font-size: 14px;
   text-transform: uppercase;
 }

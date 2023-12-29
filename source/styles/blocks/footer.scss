@@ -3,6 +3,7 @@
 }
 
 .footer__list {
+  @include list-reset;
   display: flex;
   flex-direction: row;
   align-content: space-between;
@@ -37,3 +38,30 @@
     mask-image: url("../../images/icons/stack.svg#icon-telegram");
   }
 }
+
+
+.footer__copyright-content {
+  position: relative;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    mask-image: url("../../images/icons/stack.svg#htmlacademy-icon");
+    width: 27px;
+    height: 34px;
+    background-color: #666666;
+  }
+
+  &:hover {
+    color: $basic-green;
+
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+}
+

@@ -3,6 +3,7 @@
 }
 
 .article__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 36px;
   line-height: 40px;
@@ -28,4 +29,8 @@
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.article__description {
+  @include description-reset;
 }

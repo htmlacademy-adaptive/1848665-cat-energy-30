@@ -29,31 +29,3 @@ a {
 *::after {
   box-sizing: inherit;
 }
-
-.title-reset {
-  margin: 0;
-  font-weight: normal;
-}
-
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.description-reset {
-  margin: 0;
-}
-
-.fieldset-reset {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.form-reset {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  text-transform: inherit;
-}

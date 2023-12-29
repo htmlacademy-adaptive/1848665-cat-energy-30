@@ -1,8 +1,13 @@
+.program-types__list {
+  @include list-reset;
+}
+
 .program-types__item {
   background-color: $basic-grey;
 }
 
 .program-types__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 37px;
@@ -41,4 +46,8 @@
   line-height: 1;
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.program-types__description {
+  @include description-reset;
 }

@@ -3,12 +3,14 @@
 }
 
 .programs__title {
+  @include title-reset;
   font-size: 36px;
   line-height: 1;
   color: $basic-black;
 }
 
 .programs__description {
+  @include description-reset;
   color: $basic-black;
   text-align: left;
   text-transform: uppercase;

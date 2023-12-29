@@ -1,0 +1,7 @@
+.header__toggle {
+  @include button-reset;
+  background-image: url("../../images/icons/stack.svg#header-toggle-mobile");
+  background-position: center;
+  width: 24px;
+  height: 24px;
+}

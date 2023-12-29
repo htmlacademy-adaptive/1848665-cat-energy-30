@@ -1,6 +1,11 @@
 .catalog__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 36px;
   line-height: 1;
   color: $basic-black;
+}
+
+.catalog__list {
+  @include list-reset;
 }
