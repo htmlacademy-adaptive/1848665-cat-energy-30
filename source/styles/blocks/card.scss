@@ -1,10 +1,15 @@
 .card__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 20px;
-  color: #222222;
+  color: $special-dark-grey;
   text-align: left;
   text-transform: uppercase;
+}
+
+.card__link-title {
+  color: $special-dark-grey-2;
 }
 
 .card__attribute {

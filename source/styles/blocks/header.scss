@@ -1,3 +1,12 @@
+.header__logo {
+  &:hover {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
+}
+
 .header__toggle {
   @include button-reset;
   background-image: url("../../images/icons/stack.svg#header-toggle-mobile");

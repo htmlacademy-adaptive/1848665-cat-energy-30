@@ -41,11 +41,20 @@
 }
 
 .program-types__link {
+  position: relative;
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 1;
   color: $basic-black;
   text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/icons/stack.svg#arrow-icon");
+    width: 24px;
+    height: 12px;
+  }
 }
 
 .program-types__description {

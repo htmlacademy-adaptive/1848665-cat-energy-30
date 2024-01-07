@@ -1,4 +1,5 @@
 .additional-products__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 1;
@@ -6,16 +7,23 @@
 }
 
 .additional-products__product {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 1;
-  color: #222222;
+  color: $special-dark-grey-2;
+}
+
+.additional-products__list {
+  @include list-reset;
 }
 
 .additional-products__text {
+  @include description-reset;
   line-height: 1;
 }
 
 .additional-products__value {
+  @include description-reset;
   line-height: 1;
 }

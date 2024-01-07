@@ -2,6 +2,15 @@
   background-color: $basic-grey;
 }
 
+.footer__logo {
+  &:hover {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
+}
+
 .footer__list {
   @include list-reset;
   display: flex;
@@ -16,14 +25,14 @@
   display: block;
   width: 28px;
   height: 22px;
-  background-color: #666666;
+  background-color: $special-grey-3;
 
   &:hover {
     background-color: $basic-green;
   }
 
   &:active {
-    background-color: rgba(104, 183, 56, 0.3);
+    opacity: 0.3;
   }
 
   &--vkontakte {
@@ -39,10 +48,14 @@
   }
 }
 
+.footer__copyright {
+  color: inherit;
+}
 
 .footer__copyright-content {
   position: relative;
   display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
 
@@ -53,14 +66,22 @@
     mask-image: url("../../images/icons/stack.svg#htmlacademy-icon");
     width: 27px;
     height: 34px;
-    background-color: #666666;
+    background-color: $special-grey-3;
   }
 
   &:hover {
-    color: $basic-green;
+    color: $special-dark-grey;
 
     &::after {
       background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      opacity: 0.3;
     }
   }
 }

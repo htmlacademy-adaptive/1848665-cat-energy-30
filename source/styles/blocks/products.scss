@@ -2,12 +2,13 @@
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $special-dark-grey-3;
   text-align: center;
   text-transform: uppercase;
 }
 
 .products__description {
+  @include description-reset;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
