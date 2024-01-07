@@ -5,8 +5,29 @@
   text-align: left;
 }
 
+.form__fieldset {
+  @include fieldset-reset;
+}
+
+.form__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .form__text {
   font-family: $lato-font;
   line-height: 16px;
   color: $basic-black;
+}
+
+.form__input {
+  @include form-reset;
+}
+
+.form__textarea {
+  @include form-reset;
+}
+
+.form__button {
+  @include button-reset;
 }

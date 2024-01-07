@@ -1,6 +1,61 @@
 .advantages__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+}
+
+.advantages__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advantages__description {
+  @include description-reset;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf {
+
+    &::before {
+      background-image: url("../../images/icons/stack.svg#leaf-icon");
+      background-size: 25px 28px;
+    }
+  }
+
+  &--flask {
+
+    &::before {
+      background-image: url("../../images/icons/stack.svg#flask-icon");
+      background-size: 27px 29px;
+    }
+  }
+
+  &--eat {
+
+    &::before {
+      background-image: url("../../images/icons/stack.svg#eat-icon");
+      background-size: 26px 30px;
+    }
+  }
+
+  &--clock {
+
+    &::before {
+      background-image: url("../../images/icons/stack.svg#clock-icon");
+      background-size: 27px 31px;
+    }
+  }
 }

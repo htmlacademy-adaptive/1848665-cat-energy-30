@@ -1,7 +1,12 @@
 .main-nav__list {
+  @include list-reset;
   font-family: $oswald-font;
   font-size: 20px;
   line-height: 1;
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.main-nav__link {
+  color: $basic-black;
 }

@@ -7,3 +7,39 @@
     src: $font-src;
   }
 }
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title-reset {
+  margin: 0;
+  font-weight: normal;
+}
+
+@mixin description-reset {
+  margin: 0;
+}
+
+@mixin button-reset {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background: transparent;
+  border: none;
+}
+
+@mixin fieldset-reset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+@mixin form-reset {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+}

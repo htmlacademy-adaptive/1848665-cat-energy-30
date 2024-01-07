@@ -3,13 +3,19 @@
 }
 
 .article__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
 }
 
+.article__list {
+  @include list-reset;
+}
+
 .article__meaning {
+  @include description-reset;
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 1;
@@ -28,4 +34,16 @@
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.article__description {
+  @include description-reset;
+}
+
+.article__price {
+  @include description-reset;
+}
+
+.article__sum {
+  @include description-reset;
 }

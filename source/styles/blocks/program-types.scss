@@ -1,19 +1,62 @@
+.program-types__list {
+  @include list-reset;
+}
+
 .program-types__item {
   background-color: $basic-grey;
 }
 
 .program-types__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 37px;
   color: $basic-black;
   text-transform: uppercase;
+
+  &--slim {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../images/icons/stack.svg#cat-slim-mobile");
+      width: 50px;
+      height: 53px;
+    }
+  }
+
+  &--pro {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../../images/icons/stack.svg#cat-pro-mobile");
+      width: 67px;
+      height: 50px;
+    }
+  }
+
 }
 
 .program-types__link {
+  position: relative;
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 1;
   color: $basic-black;
   text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../images/icons/stack.svg#arrow-icon");
+    width: 24px;
+    height: 12px;
+  }
+}
+
+.program-types__description {
+  @include description-reset;
 }

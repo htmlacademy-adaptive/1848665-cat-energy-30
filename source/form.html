@@ -53,88 +53,88 @@
         <form class="programs__form form">
           <div class="form__wrapper">
             <!-- Основные данные -->
-            <fieldset class="form__data data">
+            <fieldset class="form__fieldset">
               <legend class="visually-hidden">Основные данные</legend>
-              <label class="data__label" for="cat-name">
-                <span class="data__attribute">Имя:*</span>
-                <input class="data__input" type="text" name="cat-name" id="cat-name"
+              <label class="form__label" for="cat-name">
+                <span class="form__control-name">Имя:*</span>
+                <input class="form__input" type="text" name="cat-name" id="cat-name"
                   placeholder="Барсик" required>
               </label>
-              <label class="data__label" for="weight-cat">
-                <span class="data__attribute">Вес (кг):*</span>
-                <input class="data__input" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
+              <label class="form__label" for="weight-cat">
+                <span class="form__control-name">Вес (кг):*</span>
+                <input class="form__input" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
               </label>
-              <label class="data__label" for="age-cat">
-                <span class="data__attribute">Возраст (лет):</span>
-                <input class="data__input" type="number" name="age-cat" id="age-cat" placeholder="7">
+              <label class="form__label" for="age-cat">
+                <span class="form__control-name">Возраст (лет):</span>
+                <input class="form__input" type="number" name="age-cat" id="age-cat" placeholder="7">
               </label>
             </fieldset>
             <!-- Тип программы -->
-            <fieldset class="form__type-programs type-programs">
+            <fieldset class="form__fieldset">
               <legend class="visually-hidden">Тип программы</legend>
-              <label class="type-programs__label" for="weight-loss">
-                <input class="type-programs__input" type="radio" name="type-program" value="weight-loss" id="weight-loss" checked>
-                <span class="type-programs__control-mark"></span>
-                <span class="type-programs__control-label">похудение</span>
+              <label class="form__label" for="weight-loss">
+                <input class="form__input" type="radio" name="type-program" value="weight-loss" id="weight-loss" checked>
+                <span class="form__control-mark"></span>
+                <span class="form__control-name">похудение</span>
               </label>
-              <label class="type-programs__label" for="weight-gain">
-                <input class="type-programs__input" type="radio" name="type-program" value="weight-gain" id="weight-gain">
-                <span class="type-programs__control-mark"></span>
-                <span class="type-programs__control-label">набор массы</span>
+              <label class="form__label" for="weight-gain">
+                <input class="form__input" type="radio" name="type-program" value="weight-gain" id="weight-gain">
+                <span class="form__control-mark"></span>
+                <span class="form__control-name">набор массы</span>
               </label>
-              <label class="type-programs__label" for="need-advice">
-                <input class="type-programs__input" type="radio" name="type-program" value="need-advice" id="need-advice">
-                <span class="type-programs__control-mark"></span>
-                <span class="type-programs__control-label">не знаю (нужен ваш совет)</span>
+              <label class="form__label" for="need-advice">
+                <input class="form__input" type="radio" name="type-program" value="need-advice" id="need-advice">
+                <span class="form__control-mark"></span>
+                <span class="form__control-name">не знаю (нужен ваш совет)</span>
               </label>
             </fieldset>
           </div>
           <!-- Контактные данные (владельца кота) -->
-          <fieldset class="form__contacts form-contacts">
+          <fieldset class="form__fieldset">
             <legend class="form__title">Контактные данные (владельца кота)</legend>
             <div class="form__wrapper">
-              <label class="form-contacts__label" for="email-owner">
-                <span class="form-contacts__label-name">E-mail:*</span>
-                <input class="form-contacts__input" type="email" name="email-owner" id="email-owner" placeholder="кuklachev@gmail.com" required>
+              <label class="form__label" for="email-owner">
+                <span class="form__control-name">E-mail:*</span>
+                <input class="form__input" type="email" name="email-owner" id="email-owner" placeholder="кuklachev@gmail.com" required>
               </label>
-              <label class="form-contacts__label" for="tel-owner">
-                <span class="form-contacts__label-name">Телефон:*</span>
-                <input class="form-contacts__input" type="tel" name="tel-owner" id="tel-owner" placeholder="8 (960) 900-60-90" required>
+              <label class="form__label" for="tel-owner">
+                <span class="form__control-name">Телефон:*</span>
+                <input class="form__input" type="tel" name="tel-owner" id="tel-owner" placeholder="8 (960) 900-60-90" required>
               </label>
             </div>
           </fieldset>
           <!-- Комментарий -->
-          <fieldset class="form__comment form-comment">
+          <fieldset class="form__fieldset">
             <legend class="form__title">Комментарий</legend>
             <div class="form__wrapper">
-              <label class="form-comment__label" for="comment">
-                <textarea class="form-comment__textarea" rows="6" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="form__label" for="comment">
+                <textarea class="form__textarea" rows="6" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </div>
           </fieldset>
           <!-- Дополнительно -->
-          <fieldset class="form__other form-other">
+          <fieldset class="form__fieldset">
             <legend class="form__title">Дополнительно</legend>
             <div class="form__wrapper">
-              <label class="form-other__label" for="sweetener">
-                <input class="form-other__input" type="checkbox" name="additional" value="sweetener" id="sweetener" checked>
-                <span class="form-other__control-mark"></span>
-                <span class="form-other__control-label">сахорозаменитель</span>
+              <label class="form__label" for="sweetener">
+                <input class="form__input" type="checkbox" name="additional" value="sweetener" id="sweetener" checked>
+                <span class="form__control-mark"></span>
+                <span class="form__control-name">сахорозаменитель</span>
               </label>
-              <label class="form-other__label" for="milk">
-                <input class="form-other__input" type="checkbox" name="additional" value="milk" id="milk">
-                <span class="form-other__control-mark"></span>
-                <span class="form-other__control-label">молоко</span>
+              <label class="form__label" for="milk">
+                <input class="form__input" type="checkbox" name="additional" value="milk" id="milk">
+                <span class="form__control-mark"></span>
+                <span class="form__control-name">молоко</span>
               </label>
-              <label class="form-other__label" for="water">
-                <input class="form-other__input" type="checkbox" name="additional" value="water" id="water">
-                <span class="form-other__control-mark"></span>
-                <span class="form-other__control-label">питьевая вода</span>
+              <label class="form__label" for="water">
+                <input class="form__input" type="checkbox" name="additional" value="water" id="water">
+                <span class="form__control-mark"></span>
+                <span class="form__control-name">питьевая вода</span>
               </label>
-              <label class="form-other__label" for="vitamins">
-                <input class="form-other__input" type="checkbox" name="additional" value="vitamins" id="vitamins">
-                <span class="form-other__control-mark"></span>
-                <span class="form-other__control-label">витамины</span>
+              <label class="form__label" for="vitamins">
+                <input class="form__input" type="checkbox" name="additional" value="vitamins" id="vitamins">
+                <span class="form__control-mark"></span>
+                <span class="form__control-name">витамины</span>
               </label>
             </div>
           </fieldset>
@@ -145,38 +145,23 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
-          <p class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="contacts__map"></div>
-      </section>
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
-          <img class="footer__logo-image" src="#" alt="Cat energy" aria-hidden="true">
+          <img class="footer__logo-image" width="128" height="24" src="images/footer-logo-text.svg" alt="Логотип магазина Cat energy" aria-hidden="true">
         </a>
         <ul class="footer__list">
           <li class="footer__item">
-            <a class="footer__link" href="https://vk.com/htmlacademy" aria-label="Перейти на страницу Кэт Энерджи в Vkontakte">
-              <img class="footer__social-icon" src="#" alt="Логотип Vkontakte" aria-hidden="true">
-            </a>
+            <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy" aria-label="Перейти на страницу Кэт Энерджи в Vkontakte"></a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Перейти на канал Кэт Энерджи в Youtube">
-              <img class="footer__social-icon" src="#" alt="Логотип Youtube" aria-hidden="true">
-            </a>
+            <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Перейти на канал Кэт Энерджи в Youtube"></a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="https://t.me/htmlacademy" aria-label="Перейти на канал Кэт Энерджи в Telegram">
-              <img class="footer__social-icon" src="#" alt="Логотип Telegram" aria-hidden="true">
-            </a>
+            <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy" aria-label="Перейти на канал Кэт Энерджи в Telegram"></a>
           </li>
         </ul>
-        <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на страницу интенсива HTML и CSS. Адаптивная вёрстка и автоматизация">
-          <span class="copyright__content">HTML Academy</span>
-          <img class="copyright__logo" src="#" alt="Логотип htmlacademy" aria-hidden="true">
+        <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на страницу интенсива HTML и CSS. Адаптивная вёрстка и автоматизация">
+          <span class="footer__copyright-content">HTML Academy</span>
         </a>
       </div>
     </footer>

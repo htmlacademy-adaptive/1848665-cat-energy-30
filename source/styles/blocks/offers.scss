@@ -3,6 +3,7 @@
 }
 
 .offers__description {
+  @include description-reset;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;

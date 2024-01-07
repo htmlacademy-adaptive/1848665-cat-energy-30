@@ -1,3 +1,88 @@
 .footer {
   background-color: $basic-grey;
 }
+
+.footer__logo {
+  &:hover {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .6;
+  }
+}
+
+.footer__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $special-grey-3;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte {
+    mask-image: url("../../images/icons/stack.svg#icon-vkontakte");
+  }
+
+  &--youtube {
+    mask-image: url("../../images/icons/stack.svg#icon-youtube");
+  }
+
+  &--telegram {
+    mask-image: url("../../images/icons/stack.svg#icon-telegram");
+  }
+}
+
+.footer__copyright {
+  color: inherit;
+}
+
+.footer__copyright-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    mask-image: url("../../images/icons/stack.svg#htmlacademy-icon");
+    width: 27px;
+    height: 34px;
+    background-color: $special-grey-3;
+  }
+
+  &:hover {
+    color: $special-dark-grey;
+
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
