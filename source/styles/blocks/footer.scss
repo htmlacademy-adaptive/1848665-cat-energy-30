@@ -2,6 +2,17 @@
   background-color: $basic-grey;
 }
 
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
 .footer__logo {
   &:hover {
     opacity: .8;

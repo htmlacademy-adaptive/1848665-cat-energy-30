@@ -15,8 +15,8 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
-      <div class="header__wrapper">
+    <header class="header wrapper">
+      <div class="header__container">
         <a class="header__logo" aria-label="Перейти на главную страницу сайта">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo-image-desktop.svg">
@@ -29,20 +29,20 @@
           </picture>
         </a>
         <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" role="link" aria-disabled="true">Подбор программ</a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" role="link" aria-disabled="true">Подбор программ</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <!-- Основной контент сайта -->
     <main class="main">
@@ -145,7 +145,7 @@
     </main>
     <!-- Подвал сайта -->
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="wrapper">
         <a class="footer__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
           <img class="footer__logo-image" width="128" height="24" src="images/footer-logo-text.svg" alt="Логотип магазина Cat energy" aria-hidden="true">
         </a>

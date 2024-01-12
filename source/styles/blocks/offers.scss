@@ -1,11 +1,14 @@
 .offers {
   background-color: $basic-green;
+  padding-top: 60px;
+  padding-bottom: 43px;
 }
 
 .offers__description {
-  @include description-reset;
   font-size: 16px;
   line-height: 20px;
-  color: $basic-white;
   text-align: center;
+  color: $basic-white;
+  width: 160px;
+  margin: 50px auto 0;
 }

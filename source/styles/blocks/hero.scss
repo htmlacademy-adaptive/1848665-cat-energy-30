@@ -1,18 +1,165 @@
 .hero {
+  position: relative;
   font-family: $oswald-font;
   color: $basic-white;
   text-align: center;
   line-height: 1;
-  background-color: $basic-green;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 302px;
+    background-color: $background-hero;
+    background-image: url("../../images/background-cat-mobile@1x.png");
+    background-position: top;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/background-cat-mobile@2x.png");
+      background-size: 320px auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      position: static;
+    }
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      left: 50%;
+      background-image: url("../../images/background-cat-desktop@1x.png");
+      background-position: right;
+      background-size: contain;
+      height: 694px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform: translateX(-50%);
+    bottom: 40px;
+    width: 280px;
+    height: 270px;
+    background-image: url("../../images/cat-food-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-food-mobile@2x.png");
+      background-size: 280px auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/cat-food-tablet@1x.png");
+      width: 709px;
+      height: 609px;
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+      width: 709px;
+      height: 609px;
+      background-size: 709px auto;
+      background-image: url("../../images/cat-food-tablet@2x.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 150px;
+      right: 67px;
+      background-image: url("../../images/cat-food-desktop@1x.png");
+      width: 552px;
+      height: 499px;
+    }
+
+    @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+      width: 552px;
+      height: 499px;
+      background-size: 552px auto;
+      background-image: url("../../images/cat-food-desktop@2x.png");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    padding-bottom: 173px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 481px;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    padding-left: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero__title {
   @include title-reset;
   font-size: 36px;
+  padding-top: 27px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    font-size: 60px;
+    line-height: 1;
+    color: $basic-black;
+    text-align: left;
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 110px;
+  }
 }
 
 .hero__description {
   @include description-reset;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    color: $basic-black;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+
+.hero__button {
+  margin-top: auto;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    padding: 14px 0 14px 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 81px;
+  }
 }

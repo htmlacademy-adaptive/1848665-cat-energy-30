@@ -1,5 +1,30 @@
 .article {
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $border-grey-2;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.article__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 224px;
+  }
+
 }
 
 .article__title {
@@ -8,6 +33,32 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+  padding-top: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-bottom: 146px;
+  }
+}
+
+.article__description {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .article__list {
@@ -34,10 +85,6 @@
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
-}
-
-.article__description {
-  @include description-reset;
 }
 
 .article__price {
