@@ -1,6 +1,5 @@
 .contacts__container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
@@ -24,6 +23,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $special-dark-grey-3;
+  width: 125px;
   text-align: left;
   text-transform: uppercase;
 
@@ -36,6 +36,7 @@
 
 .contacts__address {
   @include description-reset;
+  width: 140px;
   line-height: 20px;
   text-align: left;
 

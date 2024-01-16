@@ -28,57 +28,12 @@
 
     @media (min-width: $desktop-width) {
       position: absolute;
+      top: -121px;
       left: 50%;
       background-image: url("../../images/background-cat-desktop@1x.png");
-      background-position: right;
+      background-position: bottom right;
       background-size: contain;
-      height: 694px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    transform: translateX(-50%);
-    bottom: 40px;
-    width: 280px;
-    height: 270px;
-    background-image: url("../../images/cat-food-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../images/cat-food-mobile@2x.png");
-      background-size: 280px auto;
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url("../../images/cat-food-tablet@1x.png");
-      width: 709px;
-      height: 609px;
-    }
-
-    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
-      width: 709px;
-      height: 609px;
-      background-size: 709px auto;
-      background-image: url("../../images/cat-food-tablet@2x.png");
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 150px;
-      right: 67px;
-      background-image: url("../../images/cat-food-desktop@1x.png");
-      width: 552px;
-      height: 499px;
-    }
-
-    @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-      width: 552px;
-      height: 499px;
-      background-size: 552px auto;
-      background-image: url("../../images/cat-food-desktop@2x.png");
+      height: 815px;
     }
   }
 
@@ -111,12 +66,65 @@
 
 .hero__title {
   @include title-reset;
+  position: relative;
+  align-self: center;
   font-size: 36px;
+  width: 250px;
   padding-top: 27px;
   margin-bottom: 25px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    top: 175%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 270px;
+    background-image: url("../../images/cat-food-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-food-mobile@2x.png");
+      background-size: 280px auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../images/cat-food-tablet@1x.png");
+      top: 135%;
+      left: 60%;
+      width: 709px;
+      height: 609px;
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+      width: 709px;
+      height: 609px;
+      background-size: 709px auto;
+      background-image: url("../../images/cat-food-tablet@2x.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../images/cat-food-desktop@1x.png");
+      left: 153%;
+      top: 10%;
+      width: 552px;
+      height: 499px;
+    }
+
+    @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+      width: 552px;
+      height: 499px;
+      background-size: 552px auto;
+      background-image: url("../../images/cat-food-desktop@2x.png");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 420px;
+    align-self: normal;
     font-size: 60px;
     line-height: 1;
     color: $basic-black;

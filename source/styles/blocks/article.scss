@@ -2,6 +2,7 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, $basic-grey, $basic-grey 462px, transparent 462px, transparent 100%);
     border-top: 1px solid $border-grey-2;
   }
 
@@ -15,16 +16,17 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     gap: 79px;
+    padding-bottom: 101px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 224px;
   }
-
 }
 
 .article__title {
@@ -50,9 +52,12 @@
 }
 
 .article__description {
+  margin: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 55px;
   }
 
@@ -61,8 +66,30 @@
   }
 }
 
+.article__stats-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 167px;
+    margin-bottom: 99px;
+  }
+}
+
 .article__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+    padding-bottom: 0;
+  }
+}
+
+.article__name {
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
 }
 
 .article__meaning {
@@ -74,23 +101,40 @@
   text-transform: uppercase;
 }
 
-.article__name {
-  font-size: 12px;
-  line-height: 1;
-  text-align: center;
-}
-
 .article__price-wrapper {
   font-family: $oswald-font;
   line-height: 20px;
+  display: flex;
+  justify-content: center;
   color: $basic-black;
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 11px;
+  }
 }
 
 .article__price {
   @include description-reset;
+  color: $special-dark-grey;
+  padding-bottom: 20px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 55px;
+  }
 }
 
 .article__sum {
   @include description-reset;
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    align-self: end;
+  }
 }

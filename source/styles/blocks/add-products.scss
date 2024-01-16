@@ -1,4 +1,4 @@
-.additional-products__container {
+.add-products__container {
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -7,7 +7,7 @@
   }
 }
 
-.additional-products__title {
+.add-products__title {
   @include title-reset;
   position: relative;
   font-family: $oswald-font;
@@ -35,7 +35,12 @@
   }
 }
 
-.additional-products__product {
+.add-products__title-content {
+  display: block;
+  background-color: $basic-white;
+}
+
+.add-products__product {
   @include title-reset;
   font-family: $oswald-font;
   font-size: 16px;
@@ -47,7 +52,7 @@
   }
 }
 
-.additional-products__list {
+.add-products__list {
   @include list-reset;
   display: flex;
   flex-direction: column;
@@ -70,7 +75,7 @@
   }
 }
 
-.additional-products__item {
+.add-products__item {
   display: flex;
   flex-direction: column;
   padding-top: 13px;
@@ -101,29 +106,29 @@
   }
 }
 
-.additional-products__product {
+.add-products__product {
   text-transform: uppercase;
   padding-top: 13px;
   margin-bottom: 13px;
 }
 
-.additional-products__text-container {
+.add-products__text-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
 }
 
-.additional-products__text {
+.add-products__text {
   @include description-reset;
   line-height: 1;
 }
 
-.additional-products__value {
+.add-products__value {
   @include description-reset;
   line-height: 1;
 }
 
-.additional-products__offers {
+.add-products__offers {
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -131,7 +136,7 @@
   }
 }
 
-.additional-products__button {
+.add-products__button {
 
   @media (min-width: $tablet-width) {
     width: 100%;

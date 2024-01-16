@@ -1,16 +1,20 @@
-.header {
-
+.header__wrapper {
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
+    width: clamp($mobile-content-width, 100%, $desktop-content-width);
+    z-index: 1;
     padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    padding: 0;
     padding-top: 55px;
   }
 }
@@ -22,6 +26,12 @@
   align-items: center;
   padding-top: 13px;
   padding-bottom: 15px;
+
+  @media (max-width: $mobile-max-width) {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;

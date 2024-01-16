@@ -1,11 +1,3 @@
-.catalog__title-container {
-  border-top: 1px solid $border-grey;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-}
-
 .catalog__title {
   @include title-reset;
   font-family: $oswald-font;
@@ -14,17 +6,24 @@
   color: $basic-black;
   padding-top: 27px;
   padding-bottom: 41px;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $special-grey-2;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
     padding-top: 65px;
     padding-bottom: 84px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 74px;
   }
+}
+
+.catalog__title-content {
+  display: block;
 }
 
 .catalog__list {

@@ -15,34 +15,36 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header wrapper">
-      <div class="header__container">
-        <a class="header__logo" aria-label="Перейти на главную страницу сайта">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo-image-desktop.svg">
-            <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-image-tablet.svg">
-            <img class="header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Логотип компании Cat energy" aria-hidden="true">
-          </picture>
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo-text-desktop.svg">
-            <img class="header__logo-text" width="101" height="18" src="images/logo-text-mobile.svg" alt="Cat energy" aria-hidden="true">
-          </picture>
-        </a>
-        <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__container">
+          <a class="header__logo" aria-label="Перейти на главную страницу сайта">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo-image-desktop.svg">
+              <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-image-tablet.svg">
+              <img class="header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Логотип компании Cat energy" aria-hidden="true">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo-text-desktop.svg">
+              <img class="header__logo-text" width="101" height="18" src="images/logo-text-mobile.svg" alt="Cat energy" aria-hidden="true">
+            </picture>
+          </a>
+          <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--index main-nav__item--active">
+              <a class="main-nav__link" role="link" aria-disabled="true">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--index">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--index">
+              <a class="main-nav__link" href="form.html">Подбор программ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--index main-nav__item--active">
-            <a class="main-nav__link" role="link" aria-disabled="true">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--index">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--index">
-            <a class="main-nav__link" href="form.html">Подбор программ</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <!-- Основной контент сайта -->
     <main class="main">
@@ -57,13 +59,13 @@
       <section class="program-types wrapper">
         <h2 class="visually-hidden">Виды программ питания</h2>
         <ul class="program-types__list">
-          <li class="program-types__item">
-            <h3 class="program-types__title program-types__title--slim">Похудение</h3>
+          <li class="program-types__item program-types__item--slim">
+            <h3 class="program-types__title">Похудение</h3>
             <p class="program-types__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="program-types__link" role="link" aria-disabled="true">Каталог slim</a>
           </li>
-          <li class="program-types__item">
-            <h3 class="program-types__title program-types__title--pro">Набор массы</h3>
+          <li class="program-types__item program-types__item--pro">
+            <h3 class="program-types__title">Набор массы</h3>
             <p class="program-types__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="program-types__link" role="link" aria-disabled="true">Каталог pro</a>
           </li>
@@ -93,19 +95,21 @@
             <p class="article__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
-            <dl class="article__list">
-              <div class="article__item">
-                <dt class="article__name">Cнижение веса</dt>
-                <dd class="article__meaning">5 кг</dd>
+            <div class="article__stats-wrapper">
+              <dl class="article__list">
+                <div class="article__item">
+                  <dt class="article__name">Cнижение веса</dt>
+                  <dd class="article__meaning">5 кг</dd>
+                </div>
+                <div class="article__item">
+                  <dt class="article__name">Затрачено времени</dt>
+                  <dd class="article__meaning">60 дней</dd>
+                </div>
+              </dl>
+              <div class="article__price-wrapper">
+                <p class="article__price">Затраты на питание:</p>
+                <p class="article__sum">15 000 руб.</p>
               </div>
-              <div class="article__item">
-                <dt class="article__name">Затрачено времени</dt>
-                <dd class="article__meaning">60 дней</dd>
-              </div>
-            </dl>
-            <div class="article__price-wrapper">
-              <p class="article__price">Затраты на питание:</p>
-              <p class="article__sum">15 000 руб.</p>
             </div>
           </div>
           <div class="article__slider slider">
