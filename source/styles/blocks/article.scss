@@ -14,7 +14,6 @@
 .article__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -23,6 +22,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
     padding-bottom: 0;
   }
 }
@@ -87,6 +87,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -138,6 +139,10 @@
   @media (min-width: $tablet-width) {
     min-width: 130px;
     font-size: 14px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $tablet-width) {
     background-color: transparent;
   }
 }
@@ -154,6 +159,7 @@
   min-height: 55px;
   padding-top: 15px;
   border: 1px solid $special-gray;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     min-width: 162px;
@@ -203,9 +209,13 @@
 }
 
 .article__slider {
+  margin: 0 auto;
   width: 280px;
+  height: 256px;
 
   @media (min-width: $tablet-width) {
     width: 560px;
+    height: 512px;
+    margin: auto;
   }
 }

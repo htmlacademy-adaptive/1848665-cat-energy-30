@@ -22,16 +22,15 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    counter-reset: advantages 0;
     gap: 37px;
     padding-bottom: 47px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    flex-wrap: nowrap;
-    gap: 0;
+    gap: 77px;
     padding: 0;
     margin-bottom: 69px;
   }
@@ -107,7 +106,7 @@
   &::after {
     @media (min-width: $tablet-width) {
       position: absolute;
-      content: counter(advantages) "";
+      content: counter(advantages);
       counter-increment: advantages;
       font-family: $oswald-font;
       font-size: 280px;
@@ -120,7 +119,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    height: 280px;
+    width: calc((100% - 37px)/2);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc((100% - 77px * 3)/4);
   }
 }

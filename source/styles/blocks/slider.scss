@@ -1,3 +1,48 @@
+.slider {
+  position: relative;
+}
+
 .slider__button {
-  @include button-reset;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 256px;
+  padding: 0;
+  margin: 0;
+  background-color: $special-grey-3;
+  border-radius: 2px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.slider__circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  background-color: $basic-white;
+  border: 2px solid $special-grey-3;
+  border-radius: 50%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 18px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../images/icons/stack.svg#slider-arrows");
+    background-size: 24px 18px;
+  }
+}
+
+.slider__image--before {
+  position: absolute;
+  left: 0;
 }
