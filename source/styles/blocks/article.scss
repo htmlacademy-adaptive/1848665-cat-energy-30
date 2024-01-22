@@ -142,8 +142,8 @@
     background-color: $basic-white;
   }
 
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
   }
 }
 
@@ -187,6 +187,8 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+    width: 327px;
   }
 }
 

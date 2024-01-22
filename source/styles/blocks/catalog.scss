@@ -64,28 +64,12 @@
   }
 }
 
-.catalog__card {
-  width: 100%;
-  padding: 20px 20px 25px 20px;
-
+.catalog__product {
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $basic-grey, $basic-grey 430px, transparent 430px, transparent 100%);
-    padding: 0 37px 40px 37px;
-  }
+    margin-top: 82px;
+   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0 38px 40px 38px;
-  }
-
-  &--product {
-    @media (min-width: $tablet-width) {
-      margin-top: 82px;
-      background: none;
-      border: 1px solid $basic-grey;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 72px;
-    }
+   @media (min-width: $desktop-width) {
+    margin-top: 72px;
   }
 }

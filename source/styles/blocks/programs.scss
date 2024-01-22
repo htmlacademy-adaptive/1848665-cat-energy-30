@@ -4,9 +4,27 @@
 
 .programs__title {
   @include title-reset;
+  font-family: $oswald-font;
   font-size: 36px;
   line-height: 1;
   color: $basic-black;
+  padding-top: 27px;
+  padding-bottom: 37px;
+  border-top: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    padding: 0;
+    padding-top: 65px;
+    margin-bottom: 54px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+    margin-bottom: 55px;
+  }
 }
 
 .programs__description {
@@ -14,4 +32,11 @@
   color: $basic-black;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }

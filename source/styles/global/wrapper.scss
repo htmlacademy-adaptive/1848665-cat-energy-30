@@ -3,6 +3,12 @@
   width: clamp($mobile-content-width, 100%, $desktop-content-width);
   padding: 0 20px;
 
+  &--mobile-title {
+    @media (max-width: $mobile-max-width) {
+      padding-left: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
