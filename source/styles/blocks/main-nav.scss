@@ -41,8 +41,10 @@
   color: $basic-black;
 
   &--active {
-    padding-bottom: 10px;
-    border-bottom: 2px solid $basic-green;
+    @media (min-width: $tablet-width) {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $basic-green;
+    }
   }
 
   &:last-child {
@@ -65,7 +67,9 @@
   }
 
   &--index-active {
-    border-bottom: 2px solid $basic-white;
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $basic-white;
+    }
   }
 }
 

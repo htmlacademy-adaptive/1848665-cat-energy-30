@@ -5,6 +5,7 @@
 @import "./global/common.scss";
 @import "./global/visually-hidden.scss";
 @import "./global/wrapper.scss";
+@import "./global/line-title.scss";
 /* BLOCKS */
 @import "./blocks/button.scss";
 @import "./blocks/header.scss";
@@ -22,5 +23,10 @@
 @import "./blocks/products.scss";
 @import "./blocks/add-products.scss";
 @import "./blocks/offers.scss";
-@import "./blocks/programs.scss";
+@import "./blocks/catalog-programs.scss";
 @import "./blocks/form.scss";
+@import "./blocks/data.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/owner-contacts.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/additional.scss";

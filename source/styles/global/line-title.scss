@@ -1,0 +1,31 @@
+.line-title {
+  position: relative;
+  font-family: $oswald-font;
+  color: $basic-black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $basic-green;
+    z-index: -1;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 0;
+  }
+}
+
+.line-title__text {
+  display: inline-block;
+  background-color: $basic-white;
+  padding-inline: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 40px;
+  }
+}
