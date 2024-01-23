@@ -1,0 +1,19 @@
+.wrapper {
+  margin: 0 auto;
+  width: clamp($mobile-content-width, 100%, $desktop-content-width);
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+      padding: 0 70px;
+    }
+  }
+}

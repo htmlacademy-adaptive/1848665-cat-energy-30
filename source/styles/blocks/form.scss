@@ -5,13 +5,21 @@
   text-align: left;
 }
 
-.form__fieldset {
-  @include fieldset-reset;
-}
-
 .form__label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &--mark {
+    position: relative;
+  }
 }
 
 .form__text {
@@ -22,12 +30,130 @@
 
 .form__input {
   @include form-reset;
+  width: 100%;
+  height: 45px;
+  padding: 14px 50px 13px 15px;
+  border: 1px solid $border-input;
+
+  &::placeholder {
+    color: $special-dark-grey
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
 }
+
+.form__input-text {
+  padding: 13px 0 14px 0;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 12px 0;
+  }
+}
+
+.form__checkbox-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-gray;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form__checkbox-text {
+  padding: 6px 0 6px 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 5px 60px;
+  }
+}
+
+.form__checkbox[type="checkbox"]:checked + .form__checkbox-mark::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../images/icons/stack.svg#mark-checkbox");
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 8px;
+    width: 24px;
+    height: 19px;
+  }
+}
+
 
 .form__textarea {
   @include form-reset;
 }
 
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    gap: 72px;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
+}
+
+.form__programs-container {
+  border-top: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
 .form__button {
-  @include button-reset;
+  border: none;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 14px 14px 15px 14px;
+  border: 1px solid $border-input;
+
+  @media (min-width: $tablet-width) {
+    height: 175px;
+    padding: 11px 20px 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 20px 9px 20px;
+  }
 }
