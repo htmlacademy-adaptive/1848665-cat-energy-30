@@ -31,8 +31,10 @@
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 39px;
+  width: 225px;
 
   @media (min-width: $tablet-width) {
+    width: 325px;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;

@@ -1,0 +1,43 @@
+.main-nav-toggle {
+  @include button-reset;
+  position: relative;
+  display: block;
+
+  &--closed {
+    width: 24px;
+    height: 24px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url("../../images/icons/stack.svg#header-toggle-closed");
+    }
+  }
+
+  &--opened {
+    width: 19px;
+    height: 19px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 19px;
+      height: 19px;
+      background-image: url("../../images/icons/stack.svg#header-toggle-opened");
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav-toggle {
+    display: none;
+  }
+}

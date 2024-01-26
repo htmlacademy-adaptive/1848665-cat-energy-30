@@ -1,6 +1,7 @@
 .header__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -55,18 +56,6 @@
 
   @media (min-width: $desktop-width) {
     gap: 14px;
-  }
-}
-
-.header__toggle {
-  @include button-reset;
-  background-image: url("../../images/icons/stack.svg#header-toggle-mobile");
-  background-position: center;
-  width: 24px;
-  height: 24px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 

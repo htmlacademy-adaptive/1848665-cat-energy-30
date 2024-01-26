@@ -12,8 +12,14 @@
   }
 
   &--form {
-    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-max-width) {
       padding: 0 70px;
+    }
+  }
+
+  &--title {
+    @media (min-width: $desktop-width) {
+      width: 1300px;
     }
   }
 }
