@@ -15,137 +15,135 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header header__wrapper">
-      <div class="header__container">
-        <a class="header__logo" aria-label="Перейти на главную страницу сайта">
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo-image-desktop.svg">
-            <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-image-tablet.svg">
-            <img class="header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Логотип компании Cat energy" aria-hidden="true">
-          </picture>
-          <picture>
-            <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo-text-desktop.svg">
-            <img class="header__logo-text" width="101" height="18" src="images/logo-text-mobile.svg" alt="Cat energy" aria-hidden="true">
-          </picture>
-        </a>
-        <button class="header__toggle" type="button" aria-label="Открыть меню"></button>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__container">
+          <a class="header__logo" aria-label="Перейти на главную страницу сайта">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo-image-desktop.svg">
+              <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-image-tablet.svg">
+              <img class="header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Логотип компании Cat energy" aria-hidden="true">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo-text-desktop.svg">
+              <img class="header__logo-text" width="101" height="18" src="images/logo-text-mobile.svg" alt="Cat energy" aria-hidden="true">
+            </picture>
+          </a>
+          <button class="main-nav-toggle main-nav-toggle--closed" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" role="link" aria-disabled="true">Подбор программ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link" role="link" aria-disabled="true">Подбор программ</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <!-- Основной контент сайта -->
     <main class="main">
       <h1 class="visually-hidden">Подбор программы функционального питания для котов</h1>
       <section class="catalog-programs">
-        <h2 class="catalog-programs__title wrapper wrapper--title wrapper--form">
+        <h2 class="catalog-programs__title wrapper wrapper--form">
           <span class="catalog-programs__title-text">Подбор программы</span>
         </h2>
-        <p class="catalog-programs__description wrapper wrapper--form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <div class="wrapper wrapper--form">
+          <p class="catalog-programs__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
         <form class="form">
-          <div class="form__container wrapper wrapper--form">
+          <div class="form__container">
             <!-- Основные данные -->
             <div class="data">
               <h3 class="visually-hidden">Основные данные</h3>
-              <label class="form__label" for="cat-name">
+              <label class="form__label">
                 <span class="form__input-text">Имя:*</span>
-                <input class="form__input" type="text" name="cat-name" id="cat-name"
-                  placeholder="Барсик" required>
+                <input class="form__input" type="text" name="cat-name" placeholder="Барсик" required>
               </label>
-              <label class="form__label" for="weight-cat">
+              <label class="form__label">
                 <span class="form__input-text">Вес (кг):*</span>
-                <input class="form__input" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
+                <input class="form__input" type="number" name="weight-cat" placeholder="7" required>
               </label>
-              <label class="form__label" for="age-cat">
+              <label class="form__label">
                 <span class="form__input-text">Возраст (лет):</span>
-                <input class="form__input" type="number" name="age-cat" id="age-cat" placeholder="7">
+                <input class="form__input" type="number" name="age-cat" placeholder="7">
               </label>
             </div>
             <!-- Тип программы -->
             <div class="form__programs-container">
               <div class="programs">
-                <h3 class="visually-hidden">Тип программы</h3>
-                <label class="form__label form__label--mark" for="weight-loss">
-                  <input class="form__radio" type="radio" name="type-program" value="weight-loss" id="weight-loss" checked>
-                  <span class="form__radio-mark"></span>
-                  <span class="form__radio-text">похудение</span>
-                </label>
-                <label class="form__label form__label--mark" for="weight-gain">
-                  <input class="form__radio" type="radio" name="type-program" value="weight-gain" id="weight-gain">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__radio-text">набор массы</span>
-                </label>
-                <label class="form__label form__label--mark" for="need-advice">
-                  <input class="form__radio" type="radio" name="type-program" value="need-advice" id="need-advice">
-                  <span class="form__radio-mark"></span>
-                  <span class="form__radio-text">не знаю (нужен ваш совет)</span>
-                </label>
+                <div class="programs__container">
+                  <h3 class="visually-hidden">Тип программы</h3>
+                  <label class="form__label form__label--mark">
+                    <input class="form__radio visually-hidden" type="radio" name="type-program" value="weight-loss" checked>
+                    <span class="form__radio-mark">похудение</span>
+                  </label>
+                  <label class="form__label form__label--mark">
+                    <input class="form__radio visually-hidden" type="radio" name="type-program" value="weight-gain">
+                    <span class="form__radio-mark">набор массы</span>
+                  </label>
+                  <label class="form__label form__label--mark">
+                    <input class="form__radio visually-hidden" type="radio" name="type-program" value="need-advice">
+                    <span class="form__radio-mark">не знаю (нужен ваш совет)</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
           <!-- Контактные данные (владельца кота) -->
           <div class="owner-contacts">
-            <h3 class="owner-contacts__title line-title wrapper wrapper--form">
+            <h3 class="owner-contacts__title line-title wrapper wrapper--title">
               <span class="owner-contacts__title-text line-title__text">Контактные данные (владельца кота)</span>
             </h3>
             <div class="owner-contacts__container wrapper wrapper--form">
-              <label class="form__label" for="email-owner">
+              <label class="form__label form__label--email">
                 <span class="form__input-text">E-mail:*</span>
-                <input class="form__input" type="email" name="email-owner" id="email-owner" placeholder="кuklachev@gmail.com" required>
+                <input class="form__input" type="email" name="email-owner" placeholder="кuklachev@gmail.com" required>
               </label>
-              <label class="form__label" for="tel-owner">
+              <label class="form__label form__label--phone" for="tel-owner">
                 <span class="form__input-text">Телефон:*</span>
-                <input class="form__input" type="tel" name="tel-owner" id="tel-owner" placeholder="8 (960) 900-60-90" required>
+                <input class="form__input" type="tel" name="tel-owner" placeholder="8 (960) 900-60-90" required>
               </label>
             </div>
           </div>
           <!-- Комментарий -->
           <div class="comment">
-            <h3 class="comment__title line-title wrapper wrapper--form">
+            <h3 class="comment__title line-title wrapper wrapper--title">
               <span class="comment__title-text line-title__text">Комментарий</span>
             </h3>
             <div class="wrapper wrapper--form">
-              <label class="form__label" for="comment">
-                <textarea class="form__textarea" rows="6" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="form__label">
+                <textarea class="form__textarea" rows="6" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </div>
           </div>
           <!-- Дополнительно -->
           <div class="additional">
-            <h3 class="additional__title line-title wrapper wrapper--form">
+            <h3 class="additional__title line-title wrapper  wrapper--title">
               <span class="additional__title-text line-title__text">Дополнительно</span>
             </h3>
             <div class="additional__container wrapper wrapper--form">
               <div class="additional__input-container">
-                <label class="form__label form__label--mark" for="sweetener">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="sweetener" id="sweetener" checked>
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">сахорозаменитель</span>
+                <label class="form__label form__label--additional">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
+                  <span class="form__checkbox-mark">сахорозаменитель</span>
                 </label>
-                <label class="form__label form__label--mark" for="milk">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="milk" id="milk">
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">молоко</span>
+                <label class="form__label form__label--additional">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="milk">
+                  <span class="form__checkbox-mark">молоко</span>
                 </label>
-                <label class="form__label form__label--mark" for="water">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="water" id="water">
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">питьевая вода</span>
+                <label class="form__label form__label--additional">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="water">
+                  <span class="form__checkbox-mark">питьевая вода</span>
                 </label>
-                <label class="form__label form__label--mark" for="vitamins">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="vitamins" id="vitamins">
-                  <span class="form__checkbox-mark"></span>
-                  <span class="form__checkbox-text">витамины</span>
+                <label class="form__label form__label--additional">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="additional" value="vitamins">
+                  <span class="form__checkbox-mark">витамины</span>
                 </label>
               </div>
               <div class="form__button-container">
@@ -156,7 +154,7 @@
           </div>
         </form>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--form">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__content-wrapper wrapper">
           <div class="contacts__container">
