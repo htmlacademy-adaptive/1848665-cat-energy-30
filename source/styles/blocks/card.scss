@@ -9,21 +9,22 @@
     background: linear-gradient(to top, $basic-grey, $basic-grey 430px, transparent 430px, transparent 100%);
     gap: 32px;
     padding: 0 37px 40px 37px;
-   }
+  }
 
   @media (min-width: $desktop-width) {
     padding: 0 38px 40px 38px;
   }
 }
+
 .card__wrapper {
   display: flex;
 
   @media (min-width: $tablet-width) {
-   flex-direction: column;
-   align-items: center;
-   gap: 22px;
-   padding-top: 10px;
-   margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding-top: 10px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {

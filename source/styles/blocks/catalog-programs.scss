@@ -3,6 +3,7 @@
 }
 
 .catalog-programs__title {
+  @include title-reset;
   font-family: $oswald-font;
   font-size: 36px;
   line-height: 1;

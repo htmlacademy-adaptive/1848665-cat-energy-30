@@ -6,6 +6,7 @@
   &--closed {
     width: 24px;
     height: 24px;
+
     &::before {
       content: "";
       position: absolute;
@@ -20,6 +21,7 @@
   &--opened {
     width: 19px;
     height: 19px;
+
     &::before {
       content: "";
       position: absolute;
