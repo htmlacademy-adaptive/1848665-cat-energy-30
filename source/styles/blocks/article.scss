@@ -18,12 +18,14 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 101px;
+    gap: 8px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0;
+    padding-bottom: 21px;
+    gap: 0;
   }
 }
 
@@ -47,7 +49,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
     font-size: 60px;
     line-height: 1;
   }
@@ -88,6 +90,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 53px;
   }
 }
 
@@ -103,7 +106,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 62px;
+    gap: 42px;
   }
 }
 
@@ -131,14 +135,15 @@
   text-align: center;
   color: $special-dark-grey;
   background-color: $basic-grey;
-  width: 80px;
+  width: 81px;
   height: 30px;
-  bottom: 10px;
+  top: -8px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     min-width: 130px;
     font-size: 14px;
+    top: -9px;
     background-color: $basic-white;
   }
 
@@ -157,11 +162,13 @@
   text-align: center;
   min-width: 125px;
   min-height: 55px;
-  padding-top: 15px;
+  padding-top: 14px;
   border: 1px solid $special-gray;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
     min-width: 162px;
     min-height: 72px;
   }
@@ -172,8 +179,8 @@
   line-height: 20px;
   display: flex;
   justify-content: center;
+  gap: 5px;
   color: $basic-black;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
 
@@ -182,13 +189,15 @@
     justify-content: flex-start;
     font-size: 20px;
     line-height: 1;
+    gap: 0;
+    padding-right: 3px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 327px;
+    width: 330px;
   }
 }
 
@@ -219,5 +228,9 @@
     width: 560px;
     height: 512px;
     margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }

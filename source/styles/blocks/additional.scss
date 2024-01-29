@@ -19,11 +19,11 @@
 .additional__container {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 32px;
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    gap: 52px;
+    gap: 53px;
     margin-bottom: 60px;
   }
 
@@ -41,12 +41,12 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 100px;
+    column-gap: 80px;
     row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
-    gap: 0;
+    column-gap: 103px;
+    row-gap: 50px;
   }
 }

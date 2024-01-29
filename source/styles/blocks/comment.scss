@@ -1,8 +1,8 @@
 .comment {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,7 +14,11 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 78px;
+    margin-bottom: 86px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
   }
 }
 
@@ -26,11 +30,5 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
-  }
-}
-
-.form__textarea {
-  &::placeholder {
-    color: $special-dark-grey;
   }
 }

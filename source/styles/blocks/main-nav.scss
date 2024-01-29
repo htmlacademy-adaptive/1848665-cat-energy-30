@@ -1,9 +1,8 @@
 .main-nav {
-
   @media (max-width: $mobile-max-width) {
     position: absolute;
     width: 100%;
-    background-color: white;
+    background-color: $basic-white;
     z-index: 10;
   }
 
@@ -14,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     width: 475px;
+    margin: 0;
   }
 
   &--opened {
@@ -52,30 +52,22 @@
     font-size: 18px;
     line-height: 24px;
     flex-direction: row;
-    justify-content: space-between;
     gap: 33px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 1;
+    gap: 31px;
   }
 }
 
 .main-nav__item {
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
   color: $basic-black;
 
-  &--active {
-    @media (min-width: $tablet-width) {
-      padding-bottom: 10px;
-      border-bottom: 2px solid $basic-green;
-    }
-  }
-
   &:last-child {
-
     @media (max-width: $mobile-max-width) {
       width: 100%;
       border-bottom: 1px solid $border-grey-2;
@@ -92,16 +84,9 @@
       color: $basic-white;
     }
   }
-
-  &--index-active {
-    @media (min-width: $desktop-width) {
-      border-bottom: 2px solid $basic-white;
-    }
-  }
 }
 
 .main-nav--nojs .main-nav__item:last-child {
-
   @media (max-width: $mobile-max-width) {
     border-bottom: none;
   }
@@ -109,4 +94,25 @@
 
 .main-nav__link {
   color: inherit;
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 7px;
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  &--index-active {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $basic-white;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }

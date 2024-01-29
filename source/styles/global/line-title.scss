@@ -1,4 +1,5 @@
 .line-title {
+  @include title-reset;
   position: relative;
   font-family: $oswald-font;
   color: $basic-black;

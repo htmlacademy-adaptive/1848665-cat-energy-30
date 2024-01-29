@@ -8,7 +8,7 @@
     align-items: center;
     width: clamp($mobile-content-width, 100%, $desktop-content-width);
     z-index: 1;
-    padding-top: 25px;
+    padding-top: 18px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
@@ -26,7 +26,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 13px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
 
   @media (max-width: $mobile-max-width) {
     margin: 0 auto;
@@ -40,12 +40,12 @@
 }
 
 .header__logo {
-
   &:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
+
   &:active {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
