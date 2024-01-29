@@ -66,13 +66,6 @@
   padding-bottom: 24px;
   color: $basic-black;
 
-  &--active {
-    @media (min-width: $tablet-width) {
-      padding-bottom: 10px;
-      border-bottom: 2px solid $basic-green;
-    }
-  }
-
   &:last-child {
     @media (max-width: $mobile-max-width) {
       width: 100%;
@@ -106,6 +99,13 @@
 
 .main-nav__link {
   color: inherit;
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 7px;
+      border-bottom: 2px solid $basic-green;
+    }
+  }
 
   &:hover {
     opacity: 0.6;

@@ -24,7 +24,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     counter-reset: advantages 0;
-    gap: 37px;
+    column-gap: 58px;
+    row-gap: 37px;
     padding-bottom: 47px;
     margin: 0;
   }
@@ -46,6 +47,7 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
+    padding-right: 60px;
     padding-top: 151px;
     padding-bottom: 57px;
   }
@@ -109,13 +111,13 @@
       line-height: 1;
       color: $basic-grey;
       top: 0;
-      right: 0;
+      left: 35%;
       z-index: -1;
     }
   }
 
   @media (min-width: $tablet-width) {
-    width: calc((100% - 37px)/2);
+    width: calc((100% - 58px)/2);
   }
 
   @media (min-width: $desktop-width) {

@@ -38,7 +38,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 560px;
+    padding-bottom: 527px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,7 +56,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: auto;
-    padding-left: 90px;
+    padding-left: 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -93,8 +93,8 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../../images/cat-food-tablet@1x.png");
-      top: 135%;
-      left: 60%;
+      top: 147%;
+      left: 63%;
       width: 709px;
       height: 609px;
     }
@@ -129,7 +129,8 @@
     line-height: 1;
     color: $basic-black;
     text-align: left;
-    padding-top: 65px;
+    padding-top: 53px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
