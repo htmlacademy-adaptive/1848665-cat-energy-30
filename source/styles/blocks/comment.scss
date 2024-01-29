@@ -16,6 +16,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 86px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .comment__title-text {
@@ -26,11 +30,5 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
-  }
-}
-
-.form__textarea {
-  &::placeholder {
-    color: $special-dark-grey;
   }
 }

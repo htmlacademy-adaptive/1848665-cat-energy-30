@@ -24,7 +24,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 0;
+    padding-bottom: 21px;
     gap: 0;
   }
 }
@@ -90,6 +90,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 53px;
   }
 }
 
@@ -105,7 +106,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 62px;
+    gap: 42px;
   }
 }
 
@@ -195,7 +197,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 327px;
+    width: 330px;
   }
 }
 
@@ -226,5 +228,9 @@
     width: 560px;
     height: 512px;
     margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
