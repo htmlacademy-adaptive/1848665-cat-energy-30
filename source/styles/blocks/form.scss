@@ -20,7 +20,8 @@
     right: 13px;
     width: 20px;
     height: 20px;
-    background-image: url("../../images/icons/stack.svg#email-icon");
+    mask-image: url("../../images/icons/stack.svg#email-icon");
+    background-color: $special-dark-grey-2;
 
     @media (min-width: $tablet-width) {
       right: 14px;
@@ -45,7 +46,8 @@
     right: 13px;
     width: 20px;
     height: 20px;
-    background-image: url("../../images/icons/stack.svg#phone-icon");
+    mask-image: url("../../images/icons/stack.svg#phone-icon");
+    background-color: $special-dark-grey-2;
 
     @media (min-width: $tablet-width) {
       right: 14px;
@@ -59,6 +61,15 @@
   @media (min-width: $desktop-width) {
     width: calc((100% - 80px)/2);
   }
+}
+
+.form__label--mark:hover .form__radio-mark::before {
+  border-color: #bababa;
+}
+
+.form__label--mark:disabled .form__radio-mark {
+  border-color: #bababa;
+  opacity: 0.3;
 }
 
 .form__label--additional {
@@ -80,6 +91,18 @@
   padding: 14px 48px 13px 15px;
   border: 1px solid $border-input;
 
+  &:hover {
+    border-color: $special-gray;
+  }
+
+  &:active {
+    outline: 2px solid $special-dark-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+  }
+
   &::placeholder {
     color: $special-dark-grey;
   }
@@ -87,6 +110,10 @@
   @media (min-width: $tablet-width) {
     height: 52px;
   }
+}
+
+.form__input:focus:invalid {
+  outline: 2px solid #ff8282;
 }
 
 .form__input-text {
@@ -102,8 +129,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 26px;
+  gap: 23px;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     gap: 72px;
@@ -250,6 +277,10 @@
     border: 1px solid $special-gray;
     border-radius: 50%;
 
+    &:hover {
+      border: 1px solid #bababa;
+    }
+
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
@@ -277,4 +308,13 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.form__label--additional:hover .form__checkbox-mark::before {
+  border-color: #bababa;
+}
+
+.form__label--additional:disabled .form__checkbox-mark::before {
+  border-color: #bababa;
+  opacity: 0.3;
 }

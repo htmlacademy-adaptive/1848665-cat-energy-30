@@ -76,7 +76,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: 175%;
+    top: 168%;
     left: 50%;
     transform: translateX(-50%);
     width: 280px;
@@ -156,7 +156,7 @@
 }
 
 .hero__button {
-  margin-top: auto;
+  margin-top: 301px;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {

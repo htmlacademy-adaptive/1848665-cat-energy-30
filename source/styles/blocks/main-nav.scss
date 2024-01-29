@@ -62,7 +62,7 @@
 }
 
 .main-nav__item {
-  padding-top: 22px;
+  padding-top: 21px;
   padding-bottom: 24px;
   color: $basic-black;
 
@@ -106,4 +106,12 @@
 
 .main-nav__link {
   color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }

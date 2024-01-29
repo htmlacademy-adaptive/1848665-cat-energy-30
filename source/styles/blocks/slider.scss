@@ -1,34 +1,31 @@
 .slider {
   position: relative;
   display: flex;
+  z-index: 1;
 }
 
 .slider__button {
+  @include button-reset;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 4px;
-  height: 256px;
-  padding: 0;
-  margin: 0;
-  background-color: $special-grey-3;
-  border-radius: 2px;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    height: 512px;
-  }
-}
-
-.slider__circle {
-  position: absolute;
+  top: 108px;
+  left: 120px;
   width: 40px;
   height: 40px;
-  transform: translate(-50%, -50%);
   background-color: $basic-white;
   border: 2px solid $special-grey-3;
   border-radius: 50%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 256px;
+    background-color: $special-grey-3;
+    z-index: -1;
+  }
 
   &::after {
     position: absolute;
@@ -38,21 +35,52 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("../../images/icons/stack.svg#slider-arrows");
+    mask-image: url("../../images/icons/stack.svg#slider-arrows");
+    background-color: $special-grey-3;
     background-size: 24px 18px;
+  }
+
+  &:hover {
+    border-color: $basic-green;
+
+    &::before,
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+    left: 260px;
+
+    &::before {
+      height: 512px;
+    }
   }
 }
 
-.slider__image--before {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left center;
-}
+.slider__image {
+  position: relative;
+  z-index: -1;
 
-.slider__image--after {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: right center;
+  &--before {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  &--after {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
 }

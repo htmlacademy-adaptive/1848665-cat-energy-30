@@ -8,4 +8,27 @@
   text-transform: uppercase;
   background-color: $basic-green;
   padding: 10px 0 10px 0;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
+    background-color: $basic-grey;
+    color: $special-dark-grey;
+
+    &:hover {
+      background-color: $special-grey-2;
+    }
+
+    &:active {
+      background-color: $special-grey-2;
+      color: $special-dark-grey;
+    }
+  }
 }

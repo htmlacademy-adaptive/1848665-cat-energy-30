@@ -131,9 +131,9 @@
   text-align: center;
   color: $special-dark-grey;
   background-color: $basic-grey;
-  width: 80px;
+  width: 81px;
   height: 30px;
-  bottom: 10px;
+  top: -8px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -157,7 +157,7 @@
   text-align: center;
   min-width: 125px;
   min-height: 55px;
-  padding-top: 15px;
+  padding-top: 14px;
   border: 1px solid $special-gray;
   border-radius: 3px;
 
@@ -172,8 +172,8 @@
   line-height: 20px;
   display: flex;
   justify-content: center;
+  gap: 5px;
   color: $basic-black;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
 
