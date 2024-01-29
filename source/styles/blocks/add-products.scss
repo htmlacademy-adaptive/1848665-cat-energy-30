@@ -127,6 +127,7 @@
     padding-top: 4px;
     line-height: 20px;
     margin: 0;
+    margin-right: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,7 +140,12 @@
 .add-products__text {
   @include description-reset;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 51px;
+  }
+
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 244px;
   }
 }
