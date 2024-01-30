@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Подбор программ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/favicons.svg" type="image/svg+xml">
@@ -18,7 +20,7 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__container">
-          <a class="header__logo" href="#" aria-label="Перейти на главную страницу сайта">
+          <a class="header__logo" href="index.html" aria-label="Перейти на главную страницу сайта">
             <picture>
               <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo-image-desktop.svg">
               <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo-image-tablet.svg">
@@ -117,7 +119,8 @@
               <span class="comment__title-text line-title__text">Комментарий</span>
             </h3>
             <div class="wrapper wrapper--form">
-              <textarea class="form__textarea" rows="6" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="visually-hidden" for="comment">Расскажите о поведении кота</label>
+              <textarea class="form__textarea" rows="6" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
           <!-- Дополнительно -->
